@@ -3,7 +3,7 @@ body {
 }
 
 .lomake {
-    display: block;
+    display: none; /* piilotetaan lomake sivun avautuessa animaatiota varten */
     position: absolute;
     top: 40px;
     padding: 20px 50px 20px 0px;
@@ -11,7 +11,7 @@ body {
     background-size: 100%;
     box-shadow: 15px 15px 15px #1d375e;
     font-weight: bold;
-}
+  }
 
 .kentta {
     display: flex;
