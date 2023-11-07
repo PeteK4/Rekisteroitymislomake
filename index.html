@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stl.css">
+        <title>Rekisteröitymislomake</title>
+    </head>
+
+    <body>
+        <section class="lomake">
+            <h1>Rekisteröitymislomake</h1>
+            <p>Siirry kentästä toiseen tab-näppäimellä.</p>
+            
+            <form>
+              <div class="kentta">
+                <label for="id">Käyttäjä ID:</label>
+                <input class="kentta1" type="text" id="id">
+                <span id="v1"></span>
+              </div>
+        
+                <div class="kentta">
+                  <label for="salasana">Salasana:</label>
+                  <input class="kentta1" type="text" id="salasana">
+                  <span id="v2"></span>
+                </div>
+            
+                <div class="kentta">
+                  <label for="nimi">Nimi:</label>
+                  <input class="kentta2" type="text" id="nimi">
+                </div>
+            
+                <div class="kentta">
+                  <label for="osoite">Osoite:</label>
+                  <input class="kentta2" type="text" id="osoite">
+                </div>
+
+                <div class="kentta">
+                  <label for="maa">Maa:</label>
+                  <select class="kentta3" id="maa">
+                    <option value="" disabled selected>Valitse maa</option>
+                    <option value="suomi">Suomi</option>
+                    <option value="kanada">Kanada</option>
+                  </select>
+                  <span style="margin-left: 10px;" id="maaOk"></span>
+                </div>
+
+                <div class="kentta">
+                  <label for="postinumero">Postinumero:</label>
+                  <input class="kentta4" type="text" id="postinumero">
+                </div>
+
+                <div class="kentta">
+                  <label for="sahkoposti">Sähköposti:</label>
+                  <input class="kentta2" type="text" id="sahkoposti">
+                </div>
+
+                <div class="kentta">
+                  <label>Sukupuoli:</label>
+                  <input type="radio" name="sukupuoli">Mies
+                  <input type="radio" name="sukupuoli">Nainen
+                  <span style="margin-left: 10px;" id="sukupuoli"></span>
+                </div>
+                
+                <div class="kentta">
+                  <label>Kieli:</label>
+                  <div>
+                    <input type="checkbox" name="kieli" >
+                    <span>Suomi</span>
+                    <input type="checkbox" name="kieli">
+                    <span>Muu kuin suomi</span>
+                  </div>
+                  <span style="margin-left: 10px;" id="kieli"></span>
+                </div>
+
+                <div class="kentta">
+                  <label>Lisätietoja:</label>
+                  <textarea name="viesti" id="viesti"></textarea>                    
+                  <div id="laskuri"></div>
+                </div>
+
+                <div class="kentta">
+                  <button type="submit" id="nappi">Lähetä</button>
+                </div>
+              </form>          
+        </section>
+        <script src="./javascript/tekstikentta.js"></script>
+        <script src="./javascript/animaatiot.js" id="vasen>oikea"></script>
+        <script src="./javascript/tarkistin.js"></script>
+    </body>
+</html>
