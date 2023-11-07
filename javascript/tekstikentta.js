@@ -1,7 +1,7 @@
 // Seuraa tekstikentän toimintoja
 const tekstiKentta = document.getElementById("viesti");
 const merkkienMaara = document.getElementById("laskuri");
-const merkitMax = 500;
+const merkitMax = 1000;
 let klikattu = false;
 
 // Alustetaan tekstikenttä ensimmäisellä syöttökentän klikkauksella
