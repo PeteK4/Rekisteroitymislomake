@@ -1,3 +1,8 @@
+nappi2.addEventListener("click", function(event) {
+  tyhjennaLista();
+  event.preventDefault();
+});
+
 nappi.addEventListener("click", function(event) {
   event.preventDefault()
   const maaHuomautus = document.getElementById("maaOk");
@@ -10,7 +15,7 @@ nappi.addEventListener("click", function(event) {
   let maaOk = false;
   let sukupuoliOk = false;
   let kaikkiOk = 9;
-
+ 
   // Tarkista kentät 
   kaikkiKentat.forEach((syottoKentta) => {
     if (syottoKentta.value == "") {
@@ -101,5 +106,14 @@ const aktiivinen = (syottoKentta) => {
 [id, salasana, nimi, osoite, postinumero, sahkoposti].forEach((syottoKentta) => {
   syottoKentta.addEventListener("focus", () => aktiivinen(syottoKentta));
 });
+
+// Tyhjennä lomake, confirm -ikkunassa varmistus pyyntöön
+function tyhjennaLista() {
+  let varmistus = confirm("Haluatko varmasti tyhjentää lomakkeen?");
+  if (varmistus) {
+    window.location.href = "./index.html";
+    }
+  }
+
 
 
